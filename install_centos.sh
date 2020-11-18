@@ -139,7 +139,7 @@ generate_config_bottom(){
 pass {
         from: 0.0.0.0/0 to: 0.0.0.0/0
         protocol: tcp udp
-        method: pam
+        method: none
         log: connect disconnect
 }
 block {
