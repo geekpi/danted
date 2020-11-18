@@ -28,6 +28,9 @@ if [ -s "/etc/os-release" ];then
     elif [ -n "$(echo ${os_name} | grep -Ei 'CentOS')" ];then
         printf "Current OS: %s\n" "${os_name}"
         SYSTEM_RECOGNIZE="centos"
+    elif [ -n "$(echo ${os_name} | grep -Ei 'Amazon Linux')" ];then
+        printf "Current OS: %s\n" "${os_name}"
+        SYSTEM_RECOGNIZE="centos"
     else
         printf "Current OS: %s is not support.\n" "${os_name}"
     fi
